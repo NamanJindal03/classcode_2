@@ -22,30 +22,3 @@ h1{
 #span-id{
     color:purple
 } */
-*{
-    box-sizing: border-box;
-}
-
-body{
-    margin:0px;
-}
-
-div{
-    /* height: 30px;
-    width: 100px; */
-}
-/* 
-*{
-    color:white
-} */
-
-h1{
-    width:300px;
-    height:300px;
-    display: inline-block;
-}
-
-a{
-    color: red
-}
-

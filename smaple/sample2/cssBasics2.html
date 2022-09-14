@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        h1{
+            color: red;
+        }
+
+        #header:hover{
+            background-color: green;
+            font-size: 50px;
+            cursor:crosshair;
+        }
+        #focusTest:focus{
+            outline: 3px solid yellow;
+        }
+        #visitedDemo:visited{
+            color: green;
+        }
+        /* combinators +  " " > ~ */
+        div~p{
+            background-color: yellow;
+        }
+        /* h1::after{ */
+            /* content:'\0022'; */
+            /* height: 20px; */
+            /* color: black */
+        /* } */
+        /* h1::before{ */
+            /* content: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg') */
+            /* content:'\0022';  */
+            /* height: 20px; */
+            /* color: black; */
+            /* font-size: 5px;*/
+
+        /* } */
+        h1::first-line{
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1 style="border: 1px solid red;">
+        this is main headingg
+    </h1>
+    <h1 style="border: 1px solid red; display: inline-block; width: 100px;">
+        this is heading
+    </h1>
+    <span style="border: 1px solid green;display: inline-block;">
+        this is span
+    </span> -->
+    <!-- <h1 id="header">
+        Psuedo classes samples
+    </h1>
+    <input type="text" id="focusTest">
+    <input type="text">
+    <a href="https://www.google.com" id="visitedDemo">random</a>
+    <a href="https://www.google.com" >random 2</a> -->
+
+    <!-- <p>
+        3rd p tag outside div
+    </p> -->
+    <!-- div + p -->
+    <!-- <div>
+        <p>
+            1st p tag inside div
+        </p>
+        <p>
+            2nd p tag inside div
+        </p>
+        <section>
+            <p>4th p tag inside section and div</p>
+        </section>
+        <p>
+            5th p tag inside div
+        </p>
+    </div>
+    <p>
+        3rd p tag outside div
+    </p>
+    <h1>
+        this is heading 
+    </h1>
+    <p>
+        3rd p tag outside div
+    </p>
+    <p>
+        3rd p tag outside div
+    </p>
+    <p>
+        3rd p tag outside div
+    </p>
+    <section>
+        <div>
+
+        </div>
+        <p>
+            A very long nested p that we have to cgheck right now
+        </p>
+    </section>
+    <div>
+
+    </div>
+    <p>
+        3rd p tag outside div
+    </p>
+    <p>
+        3rd p tag outside div
+    </p>
+    <section>
+        <p>
+            3rd p tag outside div
+        </p>
+    </section>
+    <h1>
+        this is heading 2
+    </h1>
+    <p>
+        jferoifjojeow
+    </p> -->
+
+    <p>
+        this is a p tag <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="nature" height="10px">
+    </p>
+    <h1 >
+        <b>t</b>his is heading   his is heading   his is heading   his is heading   his is heading   his is heading   his is heading   his is heading   his is heading   his is heading   his is heading   his is heading   his is heading   his is heading   his is heading   his is heading   
+    </h1>
+    <h1>
+        This is 
+    </h1>
+<!-- in the above h1 I want to increase the font size of jsut t i.e the first letter -->
+
+</body>
+</html>
