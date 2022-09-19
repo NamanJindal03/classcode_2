@@ -1,0 +1,28 @@
+#container{
+    width: 60%;
+    border: 2px solid red;
+}
+
+.box{
+    width: 150px;
+    height:150px
+}
+
+.red{
+    background-color:red ;
+    position: static;
+}
+.green{
+    background-color: green;
+    position: relative;
+}
+.yellow{
+    background-color: yellow;
+    position: sticky;
+    top:0px;
+    z-index: 100;
+}
+.blue{
+    background-color: blue;
+    z-index: 2000;
+}

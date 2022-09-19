@@ -1,0 +1,35 @@
+/* h1{
+            color: red;
+        }
+
+        #header:hover{
+            background-color: green;
+            font-size: 50px;
+            cursor:crosshair;
+        }
+        #focusTest:focus{
+            outline: 3px solid yellow;
+        }
+        #visitedDemo:visited{
+            color: green;
+        } */
+        /* combinators +  " " > ~ */
+        /* div~p{
+            background-color: yellow;
+        } */
+        /* h1::after{ */
+            /* content:'\0022'; */
+            /* height: 20px; */
+            /* color: black */
+        /* } */
+        /* h1::before{ */
+            /* content: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg') */
+            /* content:'\0022';  */
+            /* height: 20px; */
+            /* color: black; */
+            /* font-size: 5px;*/
+
+        /* } */
+        /* h1::first-line{
+            font-size: 60px;
+        } */

@@ -1,0 +1,29 @@
+
+.box{
+    width: 200px;
+    height:200px;
+    background-color: red;
+    /* transition-duration: 4000ms;
+    transition-property: width; */
+    border: 1px solid yellow;
+    color: white;
+    
+    transition: 4000ms width;
+    /* transition-delay: 2000ms; */
+}
+#ease{
+    transition-timing-function: ease;
+}
+#ease-in{
+    transition-timing-function: ease-in;
+}
+#ease-out{
+    transition-timing-function: ease-out;
+}
+#linear{
+    transition-timing-function: linear;
+}
+
+#container:hover .box{
+    width: 1000px;
+} 
