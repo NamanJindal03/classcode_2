@@ -1,0 +1,46 @@
+.container{
+    width: 400px;
+    height:400px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMtAgslBqFAhrydwVznYgiMUNxbnAKcCuiLW1TMil-&s');
+    background-repeat: no-repeat;
+    border: 1px solid red;
+    background-position:right;
+    background-size: cover;
+}
+/*  */
+html{
+    font-size: 32px;
+}
+body{
+    /* height:98vh;
+    width:98vw; */
+    /* background-image: url(../flowers-276014__340.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover; */
+    font-size: 32px;
+}
+
+#tempDiv{
+    height: 50vh;
+    width: 50vw;
+    min-width: 300px;
+    border: 1px solid red;
+    max-width: 600px;
+    
+}
+.child{
+    width:50%;
+    border: 1px solid red;
+    height:50%;
+    /* font-size: 2rem; */
+    /* font-size: 2rem; */
+}
+
+p{
+    width: 110px;
+    white-space:nowrap;
+    border:1px solid red;
+    overflow: scroll;
+    /* text-overflow: cl; */
+}
