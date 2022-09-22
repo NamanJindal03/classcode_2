@@ -9,7 +9,7 @@
 }
 /*  */
 html{
-    font-size: 32px;
+    /* font-size: 16px; */
 }
 body{
     /* height:98vh;
@@ -19,6 +19,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover; */
     font-size: 32px;
+    background-color: var(--background-color);
 }
 
 #tempDiv{
@@ -33,6 +34,9 @@ body{
     width:50%;
     border: 1px solid red;
     height:50%;
+    font-size: 2rem;
+    padding: 4rem;
+    /* font-size: 1rem; */
     /* font-size: 2rem; */
     /* font-size: 2rem; */
 }
@@ -43,4 +47,52 @@ p{
     border:1px solid red;
     overflow: scroll;
     /* text-overflow: cl; */
+}
+
+.child-temp-1{
+    font-size: 2rem; /* 32px */
+}
+.child-temp-2{
+    font-size: 2em; 
+    padding: 2em;
+    /* 64px */
+}
+.child-temp-3{
+    /* font-size: 16px; */
+    /* font-size: 64px; */
+    /* 96px */
+    padding: 2em;
+    /* 32px */
+}
+
+.temp-span{
+    font-size: 2em;
+    color: var(--font-color);
+
+}
+button{
+    display: none;
+}
+
+@media (max-width:600px) {
+    button{
+        display: inline;
+    }
+    .child-temp-3{
+        /* font-size: 16px; */
+        /* font-size: 64px; */
+        /* 96px */
+        padding: 2em;
+        /* 32px */
+    }
+}
+/* CSS Variables  */
+.dark{
+    --font-color: white;
+    --background-color: black;
+}
+
+.light{
+    --font-color: black;
+    --background-color: white;
 }
