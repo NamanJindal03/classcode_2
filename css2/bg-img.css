@@ -46,6 +46,7 @@ p{
     white-space:nowrap;
     border:1px solid red;
     overflow: scroll;
+    
     /* text-overflow: cl; */
 }
 
