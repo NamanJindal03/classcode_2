@@ -1,0 +1,49 @@
+.box{
+    width: 100px;
+    height:100px;
+   background-color: green;
+}
+
+#one{
+    transform: rotateX(100deg);
+}
+
+#two{
+    transform: skewX(90deg)
+}
+
+#three:hover{
+    transform: scale(1.5);
+}
+
+
+.container{
+    margin: auto;
+    width: 50%;
+    margin-top: 2rem;
+}
+#block1{
+    background-color: green;
+}
+#block2{
+    background-color: yellow;
+}
+#block3{
+    background-color: blue;
+}
+#block4{
+    background-color: orange;
+}
+#block5{
+    background-color: red;
+    /* grid-row-start: 1;
+    grid-row-end: 5; */
+}
+main{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, min(500px, 25%));
+}
+.grid-span-2{
+    grid-column: span 2;
+}
