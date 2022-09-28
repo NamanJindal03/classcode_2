@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* 
+    General CSS
+*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+    color: #404040;
+    line-height: 1.6;
+    font-size: 1rem; /*16px*/
+}
+
+/* 
+    General Layout
+*/
+.main-grid{
+    display: grid;
+    grid-template-columns: minmax(1px, 1fr) minmax(0px,500px) minmax(1px, 1fr);
+    grid-column-gap: 2em;
+}
+
+@media (min-width: 600px) {
+    .main-grid{
+        grid-template-columns: minmax(1px, 1fr) repeat(3,minmax(100px,500px)) minmax(1px, 1fr);
+    }
+}
+
+/*  
+    Main Section - Info
+*/
+
+.col{
+    grid-column: 2/3;
+}
+@media (min-width: 600px) {
+    .col{
+        grid-column: span 1;
+    }
+    .col:first-child{
+        grid-column: 2/ span 1;
+    }
+}
