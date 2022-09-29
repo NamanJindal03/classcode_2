@@ -45,3 +45,156 @@ body{
         grid-column: 2/ span 1;
     }
 }
+
+/* 
+    Footer
+*/
+.footer{
+    background-color: #ece9e9; 
+    grid-template-areas:
+                ". social ."
+                ". main .";
+}
+
+/* .footer-main, .social-list{
+    grid-column: 2/ 3;
+} */
+
+.footer-main{
+    grid-area: main;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.social-list{
+    grid-area: social;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-logo, .footer-text, .footer-fineprint {
+    opacity: 0.3;
+}
+
+.social-link{
+    color: #000;
+    margin: 0.5em;
+    font-size: 1.5rem;
+}
+/* .social */
+
+@media (min-width: 600px){
+    .footer{ 
+        grid-template-areas:". main main social ."
+    }
+    .footer-main{
+        text-align: left;
+    }
+}
+
+/* 
+    Hero Section
+*/
+.hero{
+    background-image: url(../img/hero-bg.jpg);
+    background-size:cover;
+    background-position: bottom;
+    color: #fff;
+    padding: 8em 0 4em 0;
+}
+
+.hero > *{
+    grid-column: 2/3;
+}
+
+@media (min-width:600px){
+
+    .hero > *{
+        grid-column: 2/ 4;
+        margin-right: 20%;
+    }
+
+}
+
+/* 
+    Colors and Small Styles 
+*/
+.accent-color{
+    color: #dede45
+}
+
+.section-title::after{
+    content:"";
+    width: 60px;
+    height: 3px; 
+    background-color: #dede45;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.col > *{
+    text-align: center;
+}
+
+/* 
+    button styling  
+*/
+
+.btn{
+    padding: 0.5em 1.75em;
+    text-decoration: none;
+    font-weight:800;
+}
+
+.btn-primary{
+    background-color: #dede45;
+    color:#000;
+    justify-self: start;
+}
+
+/* 
+    header 
+*/
+.header{
+    position: absolute;
+    width: 100%;
+    background: transparent;
+    /* margin-top:1em; */
+}
+.header-content{
+    grid-column: 2/3;
+    display: flex;
+    justify-content: space-between;
+}
+.nav{
+    display: none;
+    background: transparent;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 100%;
+}
+.logo-link{
+    background-color: rgb(237, 237, 14);
+    padding-top: 2em;
+}
+.nav-link{
+    text-decoration: none;
+    color:#fff;
+    font-weight:;
+}
+
+@media (min-width: 600px){
+    .open-nav{
+        display:none;
+    }
+    .nav{
+        display: block;
+    }
+}
