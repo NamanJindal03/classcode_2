@@ -416,21 +416,30 @@
 // //hoisting 
 
 //3 more ways to define an object
-var a = 20;
+// var a = 20;
 
-var obj = 
-    {
-        name: 'naman',
-        lastName: 'jindal',
-        gender: 'male',
-        abc: function abcdgeeeruhighherhg(){
-        //    return 'rerngren'
-        }
-    }
-    alert('abcd')
+// var obj = 
+//     {
+//         name: 'naman',
+//         lastName: 'jindal',
+//         gender: 'male',
+//         abc: function abcdgeeeruhighherhg(){
+//         //    return 'rerngren'
+//             // return 'function call'
+//             console.log('this is the log')
+//         }
+//     }
+//     // alert('abcd')
 
 
-    function random(){
+//     function random(){
 
-    }
-    var store = random();
+//     }
+//     var store = random();
+
+document.getElementsByTagName('h1')[0].innerText = 'this is changed'
+
+const obj = {
+    first :'naman',
+    
+}
