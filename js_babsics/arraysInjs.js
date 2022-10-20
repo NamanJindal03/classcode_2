@@ -295,15 +295,15 @@
 
 /* default values in functions */
 // function checkRestOpt(name, name2, name3, name4, name5= 'naman'){ //rest operator
-//     // console.log('name', name)
-//     // console.log('name2', name2)
-//     // console.log(aplo[0])
-//     // console.log(aplo[1])
+//     console.log('name', name)
+//     console.log('name2', name2)
+//     console.log(aplo[0])
+//     console.log(aplo[1])
 //     console.log(name5)
 // }
 
-// checkRestOpt('a', 'b', 'c', 'd', 'e')
-// checkRestOpt('a', 'b', 'c', 'd')
+// // checkRestOpt('a', 'b', 'c', 'd', 'e')
+// // checkRestOpt('a', 'b', 'c', 'd')
 
 // let temp = ['one', 'two']
 // let states = ['delhi', 'tamil nadu', 'karnatka', 'punjab', ['aabcd', 'defg']];
@@ -337,9 +337,161 @@
 
 //looping mechanism -> 
 
+// for(const val of arr){
+//     console.log(val)
+// }
+// for(let i=0; i<arr.length; i++)
+
+
+//TODO: this part you cannot edit -> this is prewritten by js
+// function map(cb){
+//     /* jsut imagine we have our array with us over here */
+//     let newArr = []; //4 * undefined 
+//     var arr = ['abcd','defg','cde','dewfwe'];
+//     for(let i=0; i<arr.length; i++){
+//         // newArr[i] = cb(arr[i], i, arr);
+//         newArr.push(cb(arr[i], i, arr));
+//     }
+//     return newA;
+// }
 //map 
-['abcd','defg','cde','dewfwe'].map((val, index)=>{
-    console.log(val)
-    console.log(index)
-})
+
+// function sum(){
+//     a+b;
+// }
+// let initialArr =['abcd','def'] //do not repeat yourself 
+
+// let newArr = initialArr.map((val, index, variableCompleteArr)=>{
+    
+//     // return 10;
+//     // console.log(val) //one  -> two
+//     // console.log(index)//0 -> 1
+//     let something = []; //10, 10   //10,10
+//     for(let i=0; i<variableCompleteArr.length; i++){
+//         something.push(10);
+//     }
+//     return something;
+
+//     // return 
+// })
+// //one 0 two 1 [10,10]
+// console.log(newArr) //deep copy or shallow copy? //
+
+// for(let i=)
+
+
+// function checkConsole(cb){
+//     cb();
+// }
+
+// checkConsole(()=>{
+//     console.log('check1');
+//     console.log('check2')
+// })
+
+// function demo(){
+//     console.log('here');
+//     console.log('here2');
+//     return 10;
+//     // return undefined
+// }
+// console.log( demo());
+// console.log(newArr3);///
+
+
+
+// const arr = [1,2,3,4,5,6,7,8,9,10]; 
+// const arr_map = arr.map((index)=> index +10) //return 
+// console.log(arr_map) //output ?
+
+/* 
+
+    ...
+    map
+    every
+    slice(0)
+*/
+
+
+// makeDeeplyNested(arr1){
+//     //... 
+//     for(){
+//         if(deepnestedArr === found){
+//             makeDeeplyNested(arr1[4])
+//         }
+//     }
+// }
+// lodash ->  
+
+let arr1 = [1,2,3,[4,5, [8,9,10, [11, 12, 13]]]]; //complete deep copy
+// let arr2 = [...arr1]; 
+// // console.log(arr2) //[1,2,3,[4,5]] //deep copy
+
+// console.log(arr2[3]) //return you an array -> [4,5].push('naman) => [4,5, 'naman']
+// arr2[3].push('naman');
+// // console.log(arr2) //[1,2,3]
+// console.log(arr2.push('new value in arr2'))
+// console.log('arr2', arr2)
+
+// console.log('arr1', arr1) //
+
+
+// let arr3 = arr1.concat(arr1);
+// console.log(arr3)
+
+// console.log('first', arr3);
+// console.log('first', arr3, 'plour')
+
+
+// let varialeToBeInserted = 'insert';
+// let anotherVariable  = 'insert2';
+// console.log('this is a string', varialeToBeInserted, 'this is astrn ${anotherVariable}' )
+// console.log(`this is a string ${varialeToBeInserted} wefewfwefw ${anotherVariable}rbeufbweiufuewhf 
+// gernguhreiugheri`);
+// // ` -> tilde
+
+// let newVariableDisplay = `this is the new variable ${varialeToBeInserted}`
+// console.log(newVariableDisplay);
+
+// function dest(){
+//     let sample = 'sample'
+//     //[1,2,3]
+//     return [1, sample, 'the']
+//     console.log('first')
+//     console.log('first')
+//     console.log('first')
+//     console.log('first')
+//     console.log('first')
+//     console.log('first')
+//     console.log('first')
+// }
+
+// let [val1, val2, val3, val4] = dest();  //[fn def, sample]
+// //another way destructing
+// // let answer = dest();
+// console.log(val1); //funcdef
+
+// console.log(val2);//sample
+// console.log(val4) //undefined
+
+// console.log(answer)
+// console.log(answer[0])//
+// console.log(answer[0]()) //
+
+//let and var are mutable, const is not mutable
+// let a = 100;
+// let b = 200;
+
+// [b,a] = [a,b]; //this is the quickest way to swap things in js
+// console.log(b); //100
+// console.log(a); //200
+
+// // [val1, val3, val7]=[2,3,4,5,6,7]
+
+// let [val1] = [2,3,4,5,6,7];
+// let [val2] = [2,3,4,5,6,7];
+// console.log(val1);
+// console.log(val2);
+
+//arrays, objects, functions, asynchronous behaviour
 
