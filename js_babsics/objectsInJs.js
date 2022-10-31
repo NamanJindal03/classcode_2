@@ -88,24 +88,151 @@
 // console.log(wrong) //false
 
 //destructing with obj
-let firstName = 'Rakesh';
-let lastName = 'Kumar';
+// let firstName = 'Rakesh';
+// let lastName = 'Kumar';
 
-function studyDesc(){
-    return {firstName:'naman', lastName:'jindal'}
-}
+// function studyDesc(){
+//     return {firstName:'naman', lastName:'jindal'}
+// }
 
-({firstName, lastName} = studyDesc());
+// ({firstName, lastName} = studyDesc());
 
-// console.log(newName); //namn
-// console.log(lName); //jindal
-// console.log(firstName); //rakesh
+// // console.log(newName); //namn
+// // console.log(lName); //jindal
+// // console.log(firstName); //rakesh
 
-console.log(firstName); //naman
-console.log(lastName); //jindal
+// console.log(firstName); //naman
+// console.log(lastName); //jindal
 
 
 //dynamic assignment of keys 
 
 //dom session 2 ->
 //advanced objects -> 
+
+/* 
+    obj => {
+        firstName: 'xyz',
+        lastName: 'value
+    }
+*/
+// function objAssignment(prevObj, prop, value){
+//     console.log(prevObj);/* {firstName: 'naman'} */
+//     console.log(prop); //lastName
+//     console.log(value) //value
+//     prevObj.firstName = 'xyz';
+
+//     prevObj[prop] = value;
+//     //make changes to obj =>
+// }
+//keyp[0] => lastName  ::: prop => lastName
+//keyp[1] => 'value'   ::: value => 'value'
+//['lastName', 'value']
+// function objAssignment(prevObj, ...keyp){
+//     console.log(keyp[0]) //lastName
+//     console.log(keyp[1]) //value
+
+//     console.log(prevObj);
+//     console.log(keyp);
+//     prevObj[keyp[0]]=keyp[1] //
+
+//     //make changes to obj =>
+// }
+
+// let obj = {
+//     firstName: 'naman'
+// }
+
+// objAssignment(obj, 'lastName', 'value')
+// console.log(obj)
+
+// let obj = {
+//     firstName: 'naman',
+//     /* we donts have anythign like testprop present in here */
+//     /* testProp: undefined */
+// }
+// let testProp = 'lastName';
+// let testValue = 'something'
+
+// /* 
+// you cannot do => obj.lastName = 
+// final Output
+//     obj = {
+//         firstName: 'naman',
+//         lastName: 'something'
+//     }
+// */
+
+// console.log(obj.testProp); //undefined
+// obj.firstName = 'xyz';
+// console.log(obj)
+// obj.testProp = testValue //testValue
+// console.log(obj.testProp) //something
+
+// // obj.lastName = testValue;
+// // console.log(obj)
+
+// obj["ehfieifew","something"];
+// console.log(obj)
+// // = testValue; //
+// console.log(obj)
+// obj.testProp2 = 'soemthing2'
+// console.log(obj);
+
+
+//iterating a object -> for, map, for of, for in
+
+// var arr = [1,2,3];
+// arr.map((val, index)=>{
+
+// })
+// /* not similar to or not even remoptely similar to  */
+// arr.map[val, index]
+
+
+let obj2 ={
+    try: 'something',
+    try2: 'something2'
+}
+let obj ={
+    lastName: 'something',
+    firstName: 'abcd play play2'
+}
+// // obj.map((val, index)=>{
+// //     console.log(val);
+// //     console.log(index)
+// // })
+
+// for(const keyName in obj){
+//     console.log(obj[keyName])
+//     // console.log(obj.ob); //get value over here instead of keys what change will I make at line 203?
+// }
+
+
+// console.log(Object.keys(obj)) //all keys in obj in array form
+// console.log(Object.values(obj)) 
+// console.log(Object.keys(obj2)) //all keys in obj in array form
+// console.log(Object.values(obj2)) 
+
+/* prototyping */
+// let keysArr = Object.keys(obj);
+
+// Object.keys(obj).map((key, index)=>{
+//     obj[key] = obj[key]+' val '; //
+// })
+// console.log(obj)
+
+// console.log(Object.entries(obj))
+
+// console.log()
+//background-color
+document.getElementsByTagName('p')[0].style.backgroundColor = 'red'
+// document.getElementsByTagName('p')[0].style.padding  = "20px"
+
+// console.log(document.getElementsByTagName('p')[0].style.backgroundColor)
+// setTimeout(()=>{
+//     console.log(document.getElementsByTagName('p')[0].style.backgroundColor)
+// }, 2000)
+
+let str = 'string';
+
