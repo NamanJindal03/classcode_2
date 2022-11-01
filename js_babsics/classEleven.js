@@ -99,3 +99,4 @@ cDiv.addEventListener('click', (event )=>{
 //1) capturing sequence -> bubbling sequence -> 
 
 /* Event Delegation ->  */
+

@@ -23,15 +23,17 @@
         #colorSetting{
             background-color: red;
         } */
-        div{
+        /* div{
             min-width: 100px;
             min-height: 100px;
             border: 1px solid green;
             padding: 40px;
-        }
+        } */
     </style>
+    <script src="./classTwelve.js" defer></script>
 </head>
 <body>
+    
     <!-- <h1 id="heading1" class="headClass">
         We are working on JS
     </h1>
@@ -93,16 +95,43 @@
 
 
 
-    <div id="grandParent">
+    <!-- <div id="grandParent">
         <div id="parent">
             <div id="child">
                 <span>THis is span</span>
             </div>
         </div>
-    </div>
+    </div> -->
+
+
+    <!-- 
+        ********************************
+            Event Delegation
+        ********************************
+     -->
+     <!-- 
+        Example 1
+      -->
+     <!-- <div>
+        <ul id="food" style="padding: 100px;">
+            <li id="burger">Burger</li>
+            <li id="pizza">Pizza</li>
+            <li id="fries">Fries</li>
+        </ul>
+     </div> -->
+
+     <!-- 
+        Example 2
+      -->
+      <div id="form">
+        <input type="text" data-uppercase="1" name="name" placeholder="name" id="name">
+        <input type="text" name="gender" placeholder="gender" data-uppercase="0">
+        <input type="text" name="gender" placeholder="standard" >
+      </div>
 </body>
 </html>
-<script src="./classEleven.js"></script>
+ <!-- normal -->
+<!-- async defer -->
 
 <!-- 
     alert ======== window.alert
