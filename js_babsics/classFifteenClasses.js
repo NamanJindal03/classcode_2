@@ -30,3 +30,30 @@ console.log(people2)
 people1.descPerson()
 
 let teacher1 = new Teacher('RDPS', 'th', 45)
+
+
+//Filter polyfill 
+const words = ['naman', 'jindal', 'abcdefghj']
+const result = words.filter(word => word.length > 5 )//true, false
+console.log(result)
+
+Array.prototype.myFilter = function(cb){
+    let result = [];
+    for(let i=0; i< this.length; i++){
+        if(cb(this[i], i, this)){
+            result.push(this[i])
+        }
+    }
+    return result
+}
+const myExecc = words.myFilter(word => word.length )
+console.log(myExecc) //
+
+//Every
+//fill
+//find
+
+//push
+//pop
+//slice
+//splice

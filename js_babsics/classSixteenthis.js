@@ -426,23 +426,119 @@
 //Encapsualtion
 
 //array.pop -> the value that we are deleting 
-// function createStack(){
-//     const items = [];
-//     return {
-//         push(item){
-//             items.push(item)
-//         },
-//         pop(){
-//             return items.pop()
-//         }
-//     }
-// }
-// const stack = createStack();
-// stack.push(10);
-// stack.push(5);
-// stack.pop();
+
 
 //addeventlistener
 //preventdefault in js
 //how to prevent form from submiting in js 
 
+// function createStack(){
+//     // return{
+//     //     items:[],
+//     //     push(item){
+//     //         this.items.push(item);
+//     //     },
+//     //     pop(){
+//     //         return this.items.pop()
+//     //     },
+//     //     viewStack(){
+//     //         return this.items;
+//     //     }
+//     // }
+
+//     //Encapsulation, and abstraction
+//     const items = []; //this is acting as your private variable
+
+//     return{
+//         push(item){
+//             items.push(item);
+//         },
+//         pop(){
+//             return items.pop()
+//         },
+//         viewStack(){
+//             return items;
+//         }
+//     }
+    
+    
+// }
+// const stack1 = createStack();
+// console.log(stack1)
+// //[10]
+// stack1.push(10);
+// stack1.push(5)
+// stack1.pop()
+// console.log(stack1.items) //
+// stack1.push(15)
+// stack1.push(25)
+// console.log(stack1.items)//
+// //stack1.items[1] = 100000; //this cannot be done in a stack, and our current function is allowing that
+// console.log(stack1.items)
+
+// console.log(stack1.viewStack())
+
+//Maps 
+
+
+const arr = [1,2,3,4];
+const newArr = arr.map((val, index)=>{
+    return val + 10;
+})
+console.log(newArr)
+
+
+Array.prototype.myMap = function(cb){
+    // console.log(this)
+    //length of array 
+    //this ->
+    console.log(cb)
+    let deepCopyArr = [];
+    for(let i=0; i< this.length; i++){
+        //i is acting as the index of the array
+        //this is your arr itself
+        deepCopyArr.push(cb(this[i], i, this));
+    }
+    return deepCopyArr
+}
+// let myMap = function(){
+
+// }
+const newArrMyOwn = arr.myMap((val, index, completeArr) =>{ //implicit logic 
+    return val+10; //logic
+})
+console.log(newArrMyOwn)
+
+// const newArrMyOwn2 = arr.myMap((val, index) =>{
+//     return val +val;
+// })
+// console.log(newArrMyOwn)
+
+//1) IT return a DEEP COPY ARRAY -> 
+//2) It takes in a callback function
+//3) We have to append myMap onto the prototype of Array -> done this point
+//4) Map is a function -> done this point
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function mymap(val,index){
+//     let val;
+//     for(let index=0;index<val.length;i++){
+//         val[index]=val[index]+10; 
+//         val.push(val[index]
+//     )} 
+//     return val;
+// }
