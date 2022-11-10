@@ -369,26 +369,29 @@
 
 //when functions are returned they remember where they were present in the code 
 
-// function createIncreament(){
-//     let count= 0;//3
-//     function increament(){
-//         //
-//         count++;
-//         // message = `count is ${count}`
-//     }
-//     // let message = `count is ${count}` //count is 0 //window -> undefined
+function createIncreament(){
+    let count= 0;//3
+    function increament(){
+        //
+        count++;
+        // message = `count is ${count}`
+    }
+    // let message = `count is ${count}` //count is 0 //window -> undefined
 
-//     function log(){
-//         let message = `count is ${count}`
-//         console.log(message) //count is 3
-//     }
-//     return [increament, log] //
-// }
-// const [increament, log] = createIncreament();//
-// increament();//
-// increament();//
-// increament();//
-// log();//count is 0
+    function log(){
+        let message = `count is ${count}`
+        console.log(message) //count is 3
+    }
+    return [increament, log] //
+}
+const [increament, log] = createIncreament();//
+const [increament2, log2] = createIncreament();//
+increament();//
+increament();//
+increament();//
+increament2(); //
+log2() //
+log();//count is 0
 
 // String.prototype.generate = function(times){
 //     // let arr = [];
