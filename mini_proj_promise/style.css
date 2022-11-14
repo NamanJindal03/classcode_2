@@ -1,0 +1,16 @@
+#loader{
+    border: 40px dashed rgb(91, 80, 80, 0.5);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
