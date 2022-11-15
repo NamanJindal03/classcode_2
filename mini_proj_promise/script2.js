@@ -1,4 +1,4 @@
-func xyz 
+// func xyz 
 for (var i = 0; i < 3; i++) { //i =3
     // var is a function scoped
     //you make a var intentially a scoped thing

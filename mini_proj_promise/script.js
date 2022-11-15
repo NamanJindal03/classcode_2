@@ -26,25 +26,34 @@ function getNewQuote(){
     stopLoader();
 }
 
-function getQuotes(){
+async function getQuotes(){
     showLoader();
     const apiUrl = "https://type.fit/api/quotes";
-    setTimeout(()=>{
-        fetch(apiUrl) 
-        .then((data) =>{
-            return data.json()
-        })
-        .then((data) =>{
-            apiQuotes = data;//arrays of objects -?
+    
+    try{
+        let dataJSON = await fetch(apiUrl) 
+        let data = await dataJSON.json()
+        apiQuotes = data;//a
+        console.log(apiQuotes[0])
+        getNewQuote()
+    }
+    catch(err){
+        console.log(err)
+    }
 
-            console.log('Api loading is done')
-            console.log(apiQuotes[0])
-            getNewQuote();
-        })
-        .catch((err)=>{
-            console.log(err)
-        })
-    },3000)
+    // .then((data) =>{
+    //     return data.json()
+    // })
+    // .then((data) =>{
+    //     apiQuotes = data;//arrays of objects -?
+
+    //     console.log('Api loading is done')
+    //     console.log(apiQuotes[0])
+    //     getNewQuote();
+    // })
+    // .catch((err)=>{
+    //     console.log(err)
+    // })
 }
 
 getQuotes();

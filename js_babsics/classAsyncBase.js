@@ -54,42 +54,42 @@
 /* New API */
 /* Fetch does not handle status code errors */
 /* Axios which does handle these things */
-fetch('https://jsonplaceholder.typicoe.com/posts/1/comments') //xyz
-    .then((res) =>{
+// fetch('https://jsonplaceholder.typicoe.com/posts/1/comments') //xyz
+//     .then((res) =>{
 
-        return res.json() //pqw
-    })
-    .then((res)=>{
-        console.log(res)
-    })
-    .catch((err) =>{
-        console.log(err)
-    })
-    .finally(()=>{
-        console.log('finally things worked out for us')
-    })
-console.log('here')
+//         return res.json() //pqw
+//     })
+//     .then((res)=>{
+//         console.log(res)
+//     })
+//     .catch((err) =>{
+//         console.log(err)
+//     })
+//     .finally(()=>{
+//         console.log('finally things worked out for us')
+//     })
+// console.log('here')
 
-let flag = true;
+// let flag = true;
 
-let pTag = document.querySelector('#displayError')
+// let pTag = document.querySelector('#displayError')
 
-const dos = () =>{
-    return new Promise((resolve, reject) => {
-        setTimeout(()=>{
-            //internal computation
-            if(flag) reject('I have the flag') 
-        }, 3000) //async
-    })
-}
+// const dos = () =>{
+//     return new Promise((resolve, reject) => {
+//         setTimeout(()=>{
+//             //internal computation
+//             if(flag) reject('I have the flag') 
+//         }, 3000) //async
+//     })
+// }
 
 
-dos()
-    .then((res)=>{console.log(res)})
-    .catch((err) =>{
-        pTag.innerText = err;
-        console.log(err)
-    })
+// dos()
+//     .then((res)=>{console.log(res)})
+//     .catch((err) =>{
+//         pTag.innerText = err;
+//         console.log(err)
+//     })
 
 //Averagely your api is giving result in 10-15 seconds || the api is made by our company itself 
 
@@ -117,16 +117,108 @@ dos()
 // console.log(arr)
 
 
-function abcd(arr){
-    arr.push(100);
+// function abcd(arr){
+//     arr.push(100);
+// }
+// function defg(val){
+//     val = 100;
+// }
+
+// let arr = [1,2,3];
+// let val = 10;
+// abcd(arr)
+// defg(val)
+// console.log(arr)
+// console.log(val) //
+
+// let flag = true
+// const dos = () =>{
+//     return new Promise((resolve, reject) => {
+//         setTimeout(()=>{
+//             //internal computation
+//             if(flag) reject('I have the flag err') 
+//         }, 3000) //async
+//     })
+// }
+// const notAsync = () =>{
+//     return 'abcd';
+// }
+// /* whenever you have to use await keyword the function should habe a async keyword */
+
+// /* 
+//     try catch 
+// */
+
+// const middleware = async ()=>{
+//     // console.log(await dos()) //error?
+//     try{
+//         console.log(await dos()) //error?
+//     }
+//     catch(err){
+//         console.log(err)
+//     }
+//     try{
+//         console.log(await dos()) //error?
+//     }
+//     catch(err){
+//         return res.json({status: 404, message:err})
+//     }
+// }
+
+
+// const middleware2 = async ()=>{
+
+// }
+
+// middleware();
+// console.log("I am outside")
+
+// dos()
+//     .then((res)=>{console.log(res)})
+//     .catch((err) =>{
+//         pTag.innerText = err;
+//         console.log(err)
+//     })
+
+    // let abc = //do something
+    
+
+  //async await   
+    
+  //1ms 2ms
+  //2ms 1ms
+const dictionaryApi = async () =>{
+    try{
+        let apiResponseJSON = await fetch("https://api.dictionarapi.dev/api/v2/entries/en/hello") //promise
+        let apiResponse = await apiResponseJSON.json();
+        console.log(apiResponse)//
+    }
+    catch(err){
+        return Promise.reject(err)
+        return err;
+    }
+
 }
-function defg(val){
-    val = 100;
+const jsonPlaceHolder = async () =>{
+    try{
+        let jsonApiResJSON = await fetch("https://jsonplaceholder.typicode.com/posts/1/comments")
+        let jsonApiRes = await jsonApiResJSON.json();
+        console.log(jsonApiRes)//
+    }
+    catch(err){
+        return Promise.reject(err)
+        // return err;
+    }
 }
 
-let arr = [1,2,3];
-let val = 10;
-abcd(arr)
-defg(val)
-console.log(arr)
-console.log(val) //
+const middlewareExec = async () =>{
+    try{
+        await dictionaryApi()
+        await jsonPlaceHolder()
+    }
+    catch(err){
+        console.log(err)
+    }
+}
+middlewareExec();
+// jsonPlaceHolder();
