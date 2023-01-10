@@ -1,15 +1,14 @@
 import React, {useEffect, useState} from 'react'
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { add, remove } from '../store/cartSlice';
+import { getProducts } from '../store/productSlice';
 
 function Products() {
     const dispatch = useDispatch();
-    const [products, setProducts] = useState([])
-    const callProductsAPI = async() =>{
-        const dataJson = await fetch('https://fakestoreapi.com/products');
-        const data = await dataJson.json();
-        // console.log(data[0])
-        setProducts(data)
+    const {data: products, status} = useSelector((state)=> state.product )
+    // const [products, setProducts] = useState([])
+    const callProductsAPI = () =>{
+        dispatch(getProducts())
     }
     useEffect(()=>{
         callProductsAPI();
@@ -19,6 +18,12 @@ function Products() {
         /* dispatch(action.type, payload ) */
         // dispatch({type:'cart/add', payload: product})
         dispatch(add(product))
+    }
+    if(status === 'loading'){
+        return 'loading'
+    }
+    if(status === 'error'){
+        return 'error in fetching products'
     }
 
   return (
@@ -34,6 +39,8 @@ function Products() {
            )
         })}
     </div>
+    /* component -> reloading ->  */
+    /*  */
   )
 }
 

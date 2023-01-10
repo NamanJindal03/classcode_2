@@ -36,6 +36,7 @@ const cartSlice = createSlice({
 /* cart/add 
     cart/remove
 */
+
 export const {add, remove} = cartSlice.actions;
 export default cartSlice.reducer;
 /* default -> can import using any nmae */

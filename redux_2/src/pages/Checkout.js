@@ -33,3 +33,88 @@ function Checkout() {
 }
 
 export default Checkout
+
+
+/* 
+  smaple project/ personal
+
+  company level -> 
+    frotned backend -> 
+
+    backend -> external librarires -> 
+      db schema structuring -> 
+    
+      Db -> 5 values, name, age, gener
+    api -> put 
+      {
+        payload:
+      }
+    patch{
+      age: 20,
+      id: 
+    }
+
+
+    backend -> 
+
+      system state pure -> 
+        DB -> 
+
+        Frontend -> {
+          id: 23hrhfufjew
+
+        }
+
+
+    frotnend -> 10 combinations ->
+        payload validator -> 
+
+        standard structure -> 
+
+
+        backend -> products -> 
+          object ->
+          function 
+
+          api expoe ->
+          
+          frotnend {
+
+            product:[],
+            requestId: 10,
+            ecomStoreName: 'rhfijfif'
+          }
+
+
+          backend {
+            product: {}
+          }
+
+
+
+          product.title
+
+        if(typeof === 'object'){
+          
+        }
+        else{
+          res.status(400).json({message: 'message went wrong'})
+        }
+
+        frotnend -> css html 
+          tedious -> 
+
+
+        backend -> 40-50 fields 
+          data engineer 
+
+          generic backend engineer -> 
+
+        
+          Sunday: 11:00 am -> 2-3 assigment -> 
+          Redux -> 2 
+          React -> 1 
+
+          
+
+*/
